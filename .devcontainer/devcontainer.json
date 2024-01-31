@@ -2,7 +2,7 @@
     "name": "bunshell-playground",
     "build": {
       "dockerfile": "Dockerfile",
-      "context": ".."
+      "context": "../.."
     },
     "customizations": {
         "vscode": {
