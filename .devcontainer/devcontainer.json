@@ -1,9 +1,6 @@
 {
     "name": "bunshell-playground",
-    "build": {
-      "dockerfile": "Dockerfile",
-      "context": "../.."
-    },
+    "dockerComposeFile": ["./docker-compose.yml"],
     "customizations": {
         "vscode": {
             "settings": {
@@ -27,11 +24,6 @@
                 "oven.bun-vscode"
             ]
         }
-    },
-    "forwardPorts": [
-      3000
-    ],
-    "postCreateCommand": "bun install",
-    "remoteUser": "bun"
-  }
+    }
+}
   

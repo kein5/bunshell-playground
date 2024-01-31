@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  bun:
+    build:
+      context: .
+      dockerfile: bun.dockerfile
+    working_dir: /usr/src/app
+    volumes:
+      - ../:/usr/src/app:delegated
+      - node_modules:/usr/src/app/node_modules
+    tty: true
+  db:
+    image: postgres:latest
+    volumes:
+      - postgres_data:/var/lib/postgres/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+volumes:
+  node_modules:
+  postgres_data:
