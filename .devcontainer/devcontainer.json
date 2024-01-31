@@ -8,7 +8,14 @@
         "vscode": {
             "settings": {
                 "terminal.integrated.shell.linux": "/bin/bash",
-                "workbench.iconTheme": "vscode-icons"
+                "workbench.iconTheme": "vscode-icons",
+                "typescript.tsdk": "node_modules/typescript/lib",
+                "typescript.enablePromptUseWorkspaceTsdk": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "editor.formatOnSave": true,
+                "editor.codeActionsOnSave": {
+                  "source.fixAll.eslint": "explicit"
+                }
             },
             "extensions": [
                 "dbaeumer.vscode-eslint",
@@ -16,7 +23,8 @@
                 "rvest.vs-code-prettier-eslint",
                 "vscode-icons-team.vscode-icons",
                 "EditorConfig.EditorConfig",
-                "leodevbro.blockman"
+                "leodevbro.blockman",
+                "oven.bun-vscode"
             ]
         }
     },
