@@ -3,7 +3,7 @@ version: "3"
 services:
   bun:
     build:
-      context: .
+      context: ..
       dockerfile: bun.dockerfile
     working_dir: /usr/src/app
     volumes:
