@@ -1,6 +1,8 @@
 {
     "name": "bunshell-playground",
     "dockerComposeFile": ["./docker-compose.yml"],
+    "service": "bun",
+    "workspaceFolder": "/usr/src/app",
     "customizations": {
         "vscode": {
             "settings": {
