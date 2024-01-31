@@ -1,0 +1,29 @@
+{
+    "name": "bunshell-playground",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "workbench.iconTheme": "vscode-icons"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "rvest.vs-code-prettier-eslint",
+                "vscode-icons-team.vscode-icons",
+                "EditorConfig.EditorConfig",
+                "leodevbro.blockman"
+            ]
+        }
+    },
+    "forwardPorts": [
+      3000
+    ],
+    "postCreateCommand": "bun install",
+    "remoteUser": "bun"
+  }
+  
