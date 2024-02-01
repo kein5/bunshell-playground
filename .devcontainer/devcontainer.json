@@ -19,10 +19,8 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-                "rvest.vs-code-prettier-eslint",
                 "vscode-icons-team.vscode-icons",
                 "EditorConfig.EditorConfig",
-                "leodevbro.blockman",
                 "oven.bun-vscode"
             ]
         }
